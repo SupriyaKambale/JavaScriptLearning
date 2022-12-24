@@ -43,7 +43,8 @@ swap_values("Virat","Anushka");
 
 console.log("\n---------------Q5-------------");
 var str=function(sentence){
-    console.log("A: Input string:", sentence, "\n Length:",sentence.length);
+    console.log(" Input string:", sentence);
+    console.log("A: Length :",sentence.length);
     console.log("B: Index of 'S':",sentence.indexOf("S"));
     console.log("C: Index of 'lang':",sentence.indexOf("lang"));
     console.log("D: Last character of the string:",sentence.charAt(sentence.length-1));
