@@ -46,18 +46,13 @@ console.log(`\n---------Q6. Given a string company = “Codemind Technology”;-
 console.log(`\n---------a. Write a code to reverse only → Technology word------------`);
 const str="Codemind Technology";
 
-const str2=str.split(" ");
+const strArr=str.split(" ");
 
-for (const element of str2) {
-    console.log(element);
+for (const element of strArr) {
+    //console.log(element);
   }
-
-
-
-console.log(`\n---------b. Expected output → “Codemind ygolonhceT”------------`);
-let str3=(str2[1]);
-console.log(str3);
-
+let str3=(strArr[1]);
+//console.log(str3);
 
 function reverseString(str) {
     if (str === "")
@@ -65,7 +60,25 @@ function reverseString(str) {
     else
       return reverseString(str.substr(1)) + str.charAt(0);
   }
-  var result=reverseString(str3);
-  console.log(result);
+  var revStr=reverseString(str3);
+  console.log(revStr);
 
   
+
+console.log(`\n---------b. Expected output → “Codemind ygolonhceT”------------`);
+
+var replacement= revStr;
+strArr[strArr.length-1]=replacement;
+//console.log(strArr);
+
+console.log(strArr.join(' '));
+
+
+//   //////
+//   var array = ['a', 'b', 'c'];
+
+// var replacement = 'x';
+
+// array[array.length - 1] = replacement;
+
+// console.log(array);  // ['a', 'b', 'x']
