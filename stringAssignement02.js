@@ -7,6 +7,12 @@ var stringHandsOn=function(str){
                                 console.log("Q6. Last character after trim:", str.trim().charAt(str.trim().length));
                                 console.log("Q7. Index of 'good':", str.indexOf("good"));
                                 console.log("Q8. Substring and Slice from index 22:", str.slice(0,22));
-                                console.log("Q9. string ends with 'up': ");
+                                console.log("Q9. string ends with 'up': ",str.trim().endsWith(`up"`));
+                              
+                              console.log("Q10. string starts with 'Hey': ", str.trim().startsWith(`"Hey`));
+                             
+                             
+                              
+                                                                                    
 }
-stringHandsOn(`      " Hey you are doing good, keep it up! "    `);
+stringHandsOn(`      "Hey you are doing good, keep it up"    `);
